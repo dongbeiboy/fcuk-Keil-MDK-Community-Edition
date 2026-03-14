@@ -7,7 +7,7 @@
 keil5这个社区许可证犹如狗皮膏药，一般人找不到彻底移除它的方法
 我写了一个PowerShell脚本，用于移除Keil μVision5中的社区许可证
 
-## 使用方法
+## 食用方法
 
 1. 下载 `remove_keil_license.ps1` 脚本文件
 2. 右键点击脚本文件，选择"使用PowerShell运行"
