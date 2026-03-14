@@ -125,7 +125,7 @@ if ($choice -eq "1") {
     }
     else {
         Write-Host "未找到许可证文件夹: $armlmPath" -ForegroundColor Red
-        Write-Host "没找着文件，你是不是没用keilMDK社区版许可证或是已经卸过了？" -ForegroundColor Red
+        Write-Host "没找着文件，你是不是没用keilMDK社区版许可证或是已经删过了？" -ForegroundColor Red
     }
 }
 elseif ($choice -eq "2") {
