@@ -83,11 +83,11 @@ if ($choice -eq "1") {
         # 如果找到所有必需的文件夹
         if ($foundFolders.Count -eq $requiredFolders.Count) {
             Write-Host "已找到所有必需的文件夹: $($foundFolders -join ', ')" -ForegroundColor Green
-            $step = Read-Host "输入1删除许可证文件夹内容，其他任意键退出"
+            $step = Read-Host "输入1删除许可证相关内容，按其他任意键退出"
             if ($step -ne "1") { exit }
 
             Write-Host ""
-            Write-Host "正在删除许可证文件夹内容..." -ForegroundColor Yellow
+            Write-Host "正在删除许可证相关内容..." -ForegroundColor Yellow
 
             # 尝试删除.armlm文件夹内的内容
             try {
@@ -125,7 +125,7 @@ if ($choice -eq "1") {
     }
     else {
         Write-Host "未找到许可证文件夹: $armlmPath" -ForegroundColor Red
-        Write-Host "没找着文件，好像出错了" -ForegroundColor Red
+        Write-Host "没找着文件，你是不是没用keilMDK社区版许可证或是已经卸过了？" -ForegroundColor Red
     }
 }
 elseif ($choice -eq "2") {
